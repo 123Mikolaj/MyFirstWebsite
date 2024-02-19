@@ -1,0 +1,114 @@
+<?php
+  session_start();
+
+  if(!isset($_SESSION['zalogowany']))
+  {
+    header('Location: STRONA.html');
+    exit();
+  }
+?>
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style5.css">
+  <title>Database</title>
+
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<header>
+    <nav class="navbar navbar-expand-sm bg-bar navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="STRONA_login.php"> <img src="logo2.jpg" alt="Avatar Logo" style="width:50px;"
+            class="rounded-pill"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="GALERIA_login.php">Galeria Postaci</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FILMY_login.php">Filmy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ANIMACJE_login.php">Animacje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="KOMENTARZE_login.php">Komentarze</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Zalogowany</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="logout.php">Wyloguj się</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container mt-5 mb-5" style="overflow-y:auto;">
+
+      <div class="row">
+        <div class="col-sm-6 mb-5">
+          <div class="container_img"><img class="img-fluid rounded" src="btas.jpg" alt="Cinque Terre">
+            Batman: The Animated Series (BTAS)
+          </div>
+        </div>
+
+        <div class="col-sm-6 mb-5">
+          <div class="container_img"><img class="img-fluid rounded" src="tnba.jpg" alt="Cinque Terre">
+            The New Batman Adventures
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 mb-5">
+            <div class="container_img"><img class="img-fluid rounded" src="jla.jpg" alt="Cinque Terre">
+              Justice League
+            </div>
+          </div>
+  
+          <div class="col-sm-6 mb-5">
+            <div class="container_img"><img class="img-fluid rounded" src="jlu.jpg" alt="Cinque Terre">
+              Justice League Unlimited
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 mb-5">
+              <div class="container_img"><img class="img-fluid rounded" src="bb.jpg" alt="Cinque Terre">
+              Batman Beyond
+              </div>
+            </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-batman text-center text-white mt-auto">
+
+    <div class="bg-bar p-3">
+      Autor: Miko�aj Solecki
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

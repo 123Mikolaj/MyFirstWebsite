@@ -1,0 +1,121 @@
+body {
+	background-image: url(background.jpg);
+	background-position-x: center;
+	background-size: cover;
+	color: #efefef;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+}
+.center
+{
+	background-color: #090909a0;
+	margin: auto;
+  	width: 80%;
+  	border: 3px solid #0e37cb;
+  	padding: 120px;
+  	text-align: center;
+}
+
+.bg-batman {
+	background-color: rgba(0, 0, 0, 0.559);
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.338);
+	height: 640px;
+}
+
+.text {
+	background-color: rgb(168, 13, 13);
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	font-weight: 500;
+	padding: 16px 32px;
+}
+
+.bg-bar {
+	background-color: #090909;
+}
+
+.img-fluid {
+	height: 450px;
+	max-width: 280px;
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	
+}
+
+.container_img {
+	display: block;
+	position: relative;
+	width: 50%;
+}
+
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.container_img:hover .img-fluid {
+	opacity: 0.3;
+}
+
+.container_img:hover .middle {
+	opacity: 1;
+}
+.gotham
+{
+	position: relative;
+	height: auto;
+	width: 100%;
+	
+}
+.opis
+{
+	text-align:justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container_bottom
+{
+	width: auto;
+}
+.rzad
+{
+	margin-top: 100px;
+}
+.slider
+{
+	width: 200px;
+}
+.img {
+	width: 90%;
+	max-width: 350px;
+	margin-left: auto; 
+	margin-right: auto;
+    display: block;
+	margin-top: 10%;
+}
+.content
+{
+	text-align: center;
+}
+.error
+{
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.koment
+{
+	text-align: center;
+}

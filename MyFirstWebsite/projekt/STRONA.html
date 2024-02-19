@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style5.css">
+  <title>Main Page</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-sm bg-bar navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="STRONA.html"> <img src="logo2.jpg" alt="Avatar Logo" style="width:50px;"
+            class="rounded-pill"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="GALERIA.html">Galeria Postaci</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FILMY.html">Filmy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ANIMACJE.html">Animacje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="KOMENTARZE.html">Komentarze</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Konto</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.php">Zaloguj się</a></li>
+                <li><a class="dropdown-item" href="register.php">Rejestracja</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container mt-5 mb-5" style="overflow-y:auto;">
+
+      <div class="row">
+        <div class="opis col-sm-12 mt-5">
+          <h2>Witaj
+            <?php echo $_SESSION[' imie']?>!
+          </h2>
+          <p>To jest strona robiona w ramach projektu na studia.
+          Jej tematem jest Batman, czyli komiksowy superbohater jak i wszystko co z nim związane.
+          Od zawsze jestem fanem postaci, dlatego gdy tylko zostało mi przydzielone zadanie zrobienia strony
+          internetowej pomyślałem o czymś właśnie w tym stylu.
+          Mam nadzieję że Ci się spodoba! :)</p>
+        </div>
+      </div>
+
+      <div class="rzad row">
+        <div class="opis col-sm-6">
+          <h2>GOTHAM</h2>
+          <p>Jeśli Metropolis jest miastem snów, to Gotham City jest siedzibą koszmarów. Historia miasta jest długą i
+            krwawą opowieścią o zbrodni, korupcji i śmierci.
+            Gotham ma najwyższy wskaźnik zabójstw w Północnej Ameryce. Wycierpiało wiele katastrof naturalnych i
+            sztucznych. Jest domem wielu przestępców i bohaterów.</p>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="zdjecie">
+            <img class="gotham" src="gotham.jpg" alt="Cinque Terre">
+          </div>
+        </div>
+      </div>
+
+      <div class="rzad row">
+        <div class="opis col-sm-6">
+          <h2>ARKHAM ASYLUM</h2>
+          <p>Azyl Arkham (Arkham Asylum) to fikcyjny szpital psychiatryczny, występujący w komiksach o przygodach Batmana, które wydawane są przez DC Comics.
+             Szpital Arkham został wprowadzony do komiksów za sprawą Dennisa O’Neila i Irva Novicka w Batman vol.1 #258 (październik 1974). 
+             Inspiracją dla tego miejsca było Arkham Sanitarium z fikcyjnego miasta Arkham w stanie Massachusetts, które wielokrotnie pojawiało się w utworach H.P.
+             Lovecrafta, zaś samo Arkham Sanitarium było wzorowane na prawdziwym ośrodku Danvers State Hospital w Massachusetts.</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="zdjecie">
+            <img class="gotham" src="arkham1.jpg" alt="Cinque Terre">
+          </div>
+        </div>
+      </div>
+
+      <div class="rzad row">
+        <div class="opis col-sm-6">
+          <h2>BATMAN</h2>
+          <p>Batman obok Supermana należy do najbardziej znanych postaci komiksowych.
+            Obaj są superbohaterami, których zadaniem jest walka ze złem i pomoc ludziom. Batman nie posiada żadnych
+            nadludzkich mocy, swoje zdolności zawdzięcza treningowi fizycznemu, unikalnym gadżetom i pojazdom. W
+            komiksowym uniwersum DC uchodzi za najwybitniejszego detektywa.
+            Pilnuje porządku w rodzinnym mieście Gotham City.</p>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="zdjecie">
+            <img class="gotham" src="batman.jpg" alt="Cinque Terre">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-batman text-center text-white mt-auto">
+
+    <div class="bg-bar p-3">
+      Autor: Mikołaj Solecki
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
